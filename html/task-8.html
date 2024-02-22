@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task-8</title>
+</head>
+<body>	
+	<div class="task__blok">
+		<h3 class="task__title">Цвях довжиною L см забивають в дошку. За один удар цвях заглиблюється
+			в дерево на К мм. За скільки ударів цвях заб'ють в дошку?</h3>		
+ 	</div>
+	<script>
+		numberLight = parseFloat(prompt('Якої довжини цвях?, см'))
+		numberDepth = parseFloat(prompt('На скільки мм заглиблюється цвях в дерево за один удар?'))
+		let times = numberLight * 10 / numberDepth
+		document.write(`За ${times} удврів цвях заб'ють у дошку`)
+	</script>
+</body>
+</html>

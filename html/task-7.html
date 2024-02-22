@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task-7</title>
+</head>
+<body>	
+	<div class="task__blok">
+		<h3 class="task__title">W кг цукерок ділять порівну на М дітей. По скільки г цукерок дістанеться
+			кожній дитині?</h3>		
+ 	</div>
+	<script>
+		numberSweets = parseFloat(prompt('Скільки кг цукерок Ви отримали на свято?, кг'))
+		numberChildren = parseInt(prompt('Скільки дітей?'))
+		let allSweets = numberSweets / numberChildren * 1000
+		document.write(`<p>На кожну дитину дістанеться ${allSweets} г цукерок</p>`)
+	</script>
+</body>
+</html>

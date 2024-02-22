@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task-1</title>
+</head>
+<body>   
+	<div class="task__blok">
+		<h3 class="task__title">Обчислити значення виразу</h3>
+		<p>S1 = a - b * c</p>
+		<p>S2 = (a − b)/2c</p>
+		<p>S = sin(a − b) ∗ cos(c)</p>
+ 	</div>
+	<script>
+		let numberOne = parseFloat(prompt("Ввевіть ціле число", "0"))
+      let numberTwo = parseFloat(prompt("Ввевіть ціле число", "0"))
+      let numberThree = parseFloat(prompt("Ввевіть ціле число", "0"))
+
+      let firstAction = numberTwo * numberThree
+      let resultOne = numberOne - firstAction
+
+      let secondActionOne = numberOne - numberTwo
+      let secondActionTwo = 2 * numberThree
+      let resultTwo = secondActionOne / secondActionTwo
+
+      let thirdActionOne = Math.sin(numberOne - numberTwo)
+      let resultTree = thirdActionOne * Math.cos(numberThree)
+      document.write(`<p>Ваші цифри: a = ${numberOne}, b = ${numberTwo}, c = ${numberThree}</p>
+         <p>S1 = a - b * c</p>
+         <p><br>відповідь S1 = <b>${resultOne}</b></p>
+         <p>S2 = (a - b)/2c</p>
+         <p><br>відповідь S2 = <b>${resultTwo}</b></p>
+         <p>S3 = sin(a - b) * cos(c)</p>
+         <p><br>вiдпoвiдь S3 = <b>${resultTree}</b></p>`)
+	</script>
+</body>
+</html>

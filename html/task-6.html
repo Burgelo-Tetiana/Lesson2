@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task-6</title>
+</head>
+<body>	
+	<div class="task__blok">
+		<h3 class="task__title">Вудкою зловили R риб по G г кожна. Обчисліть загальну вагу спійманої
+			риби в кг.</h3>		
+ 	</div>
+	<script>
+		numberFish = parseInt(prompt('Кількість риби, яку Ви зловили, шт.'))
+		numberWeight = parseInt(prompt('Вага кожної риби, г'))
+		let allWeight = (numberFish * numberWeight) / 1000
+		document.write(`<P>Ви зловили ${allWeight} кг риби<p>`)
+	</script>
+</body>
+</html>

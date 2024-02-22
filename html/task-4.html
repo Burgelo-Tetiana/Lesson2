@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task-4</title>
+</head>
+<body>	
+	<div class="task__blok">
+		<h3 class="task__title">З клавіатури вводиться орендна плата за квартиру (за 1 місяць). Визначити скільки треба заплатити за 1 рік, за 2 роки та 10 років.</h3>		
+ 	</div>
+	<script>
+		numberRent = parseFloat(prompt("орендна плата за квартиру (за 1 місяць),S"))
+		const year = 12
+		const twoYears = 24 
+		const tenYears = 120   
+      let paymentYear = year * numberRent
+      let paymentTwoYears = twoYears * numberRent
+      let paymentTenYears = tenYears * numberRent
+      document.write(`
+		<p>За рік Ви повинні заплатити ${paymentYear} $ </p>
+      <p><br> За 2 роки Ви повинні заплатити ${paymentTwoYears} $ </p> 
+      <p><br> За 10 років Ви повинні заплатити ${paymentTenYears} $</p>`)
+	</script>
+</body>
+</html>

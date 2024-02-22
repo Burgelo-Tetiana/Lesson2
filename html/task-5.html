@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task-5</title>
+</head>
+<body>
+	<div class="task__blok">
+		<h3 class="task__title">З клавіатури вводиться орендна плата за місяць. Визначити на скільки повних
+			місяців вистачить вказаної суми грошей, а також кількість повних років.</h3>		
+ 	</div>
+	<script>		
+		numberAmount = parseFloat(prompt("Вкажіть загальну суму на оплату оредної плати, $"))
+		numberRentMonth = parseFloat(prompt("Ваша орендна плата за мсяць, $"))
+		let allMonthes = numberAmount / numberRentMonth
+		let allYears = allMonthes / 12
+		document.write(`<p>Суми ${numberAmount} вистачить на оплату оредної плати на ${allMonthes} місяців</p> 
+		<p><br> або на ${allYears} років </p>`)
+	</script>
+</body>
+</html>

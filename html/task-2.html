@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task2</title>
+</head>
+<body>	
+	<div class="task__blok">
+		<h3 class="task__title">Дано (вводиться з клавіатури) кількість кілограмів помідорів та вартість одиниці.</h3>		
+ 	</div>
+	<script>
+		let numberKg = parseFloat(prompt("Скільки кг помідорів Ви хочете придбати?", "0"))
+      let numberPrise = parseFloat(prompt("По якій ціні (₴)?", "0"))
+      let stigma = numberKg * numberPrise
+      document.write(
+  `<p>Ви повинні заплатити за ${numberKg} кг помідорів по ціні ${numberPrise} = <b>${stigma}₴</b></p>`
+)
+	</script>
+</body>
+</html>
